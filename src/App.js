@@ -25,7 +25,7 @@ function App() {
           </Route>
           <Route path="/">
             <h2>HOW TO USE THIS APP (LSL): <br />Take a picture of your hand holding up a sign letter, and send that data to the ML model for interpretation.</h2>
-            <Link to="/start"><Button color="green">Learn!</Button></Link>
+            <Link to="/start"><Button color="primary">Learn!</Button></Link>
           </Route>
         </Switch>
       </Container>
