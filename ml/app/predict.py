@@ -51,30 +51,30 @@ def extract_bilinear_pixel(img, x, y, ratio, xOrigin, yOrigin):
     xDelta -= x0
     x0 += xOrigin
     if x0 < 0:
-        x0 = 0;
-        x1 = 0;
-        xDelta = 0.0;
+        x0 = 0
+        x1 = 0
+        xDelta = 0.0
     elif x0 >= img.shape[1]-1:
-        x0 = img.shape[1]-1;
-        x1 = img.shape[1]-1;
-        xDelta = 0.0;
+        x0 = img.shape[1]-1
+        x1 = img.shape[1]-1
+        xDelta = 0.0
     else:
-        x1 = x0 + 1;
+        x1 = x0 + 1
     
     yDelta = (y + 0.5) * ratio - 0.5
     y0 = int(yDelta)
     yDelta -= y0
     y0 += yOrigin
     if y0 < 0:
-        y0 = 0;
-        y1 = 0;
-        yDelta = 0.0;
+        y0 = 0
+        y1 = 0
+        yDelta = 0.0
     elif y0 >= img.shape[0]-1:
-        y0 = img.shape[0]-1;
-        y1 = img.shape[0]-1;
-        yDelta = 0.0;
+        y0 = img.shape[0]-1
+        y1 = img.shape[0]-1
+        yDelta = 0.0
     else:
-        y1 = y0 + 1;
+        y1 = y0 + 1
 
     #Get pixels in four corners
     bl = img[y0, x0]
