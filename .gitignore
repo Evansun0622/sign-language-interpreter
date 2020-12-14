@@ -5,3 +5,4 @@ pretrained_model.h5
 snli.tar.gz
 SNLI_Corpus/
 env/
+node_modules
